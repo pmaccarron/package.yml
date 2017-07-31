@@ -1,0 +1,18 @@
+name       : igraph
+version    : 0.7.1
+release    : 1
+source     :
+    - http://igraph.org/nightly/get/c/igraph-0.7.1.tar.gz : d978030e27369bf698f3816ab70aa9141e9baf81c56cc4f55efbe5489b46b0df
+license    : GPL-2.0 
+component  : programming
+summary    : igraph is a library for creating and manipulating graphs
+description: |
+    igraph is a collection of network analysis tools with the emphasis on efficiency, portability and ease of use.
+builddeps  :
+    - libxml2
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
