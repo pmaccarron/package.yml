@@ -1,0 +1,28 @@
+name       : graph-tool
+version    : 2.22
+release    : 1
+source     :
+    - https://downloads.skewed.de/graph-tool/graph-tool-2.22.tar.bz2 : 57121b562763c79c138b3a385b8cddb59e7dec375c61e00ca7e9e96fd1a5e080
+license    : GPL-3.0
+component  : programming.python
+summary    : an efficient python module for analysis of graphs
+description: |
+    graph-tool is an efficient Python module for manipulation and statistical analysis of graphs
+builddeps  :
+    - pkgconfig(python-2.7)
+    - pkgconfig(python3)
+    - pkgconfig(cairomm-1.0)
+    - pkgconfig(libsparsehash)
+    - libboost-devel
+    - pkgconfig(expat) 
+    - CGAL-devel
+    - numpy
+    - scipy
+    - matplotlib
+    - pkgconfig(pycairo)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
