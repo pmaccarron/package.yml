@@ -1,0 +1,22 @@
+name       : shapely
+version    : 1.5.17
+release    : 1
+source     :
+    - https://github.com/Toblerity/Shapely/archive/1.5.17.tar.gz : 85dd42a3e229f434642ad39744ebc82cd352931c6686d858bd9607649b5a4d8a
+license    : BSD-3
+component  : programming.python
+summary    :  Manipulation and analysis of geometric objects
+description: |
+    Shapely is a Python package for manipulation and analysis of geometric objects in the Cartesian plane
+builddeps  :
+    - pkgconfig(python-2.7)
+    - pkgconfig(python3)
+    - python-setuptools
+    - geos
+setup      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install
+
