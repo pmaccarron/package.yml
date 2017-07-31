@@ -1,0 +1,30 @@
+name       : gthumb
+version    : 3.4.5
+release    : 1
+source     :
+    - https://github.com/GNOME/gthumb/archive/3.4.5.tar.gz : 48fbc667922e18f4dea41d067370763457e64310df550ea1f283e8fef4c80a49
+license    : GPL
+component  : multimedia.graphics
+summary    : an image browser/viewer/editor
+description: |
+    gThumb is an image viewer and browser for the GNOME Desktop. It also includes an importer tool for transferring photos from cameras. 
+builddeps  :
+    - pkgconfig(gconf-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(unique-3.0) 
+    - pkgconfig(exiv2) 
+    - pkgconfig(gstreamer-base-1.0)
+    - pkgconfig(gsettings-desktop-schemas) 
+    - intltool
+    - libtiff
+    - gnome-common
+    - m4
+    - yelp-tools
+    - itstool
+    - gettext-devel
+setup      : |
+    %autogen
+build      : |
+    %make
+install    : |
+    %make_install
