@@ -1,0 +1,21 @@
+name       : networkx
+version    : 2.0
+release    : 1
+source     :
+    - https://github.com/networkx/networkx/archive/networkx-2.0.tar.gz : be47c08d84e9b49c2d7354bfaa1d8c130fa4b8902db73b5e1a698247ccbeef9e
+license    : BSD-3-Clause
+component  : programming.python
+summary    : NetworkX is a Python package for complex networks
+description: |
+    NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+builddeps  : 
+    - pkgconfig(python-2.7)
+    - pkgconfig(python3)
+    - python-setuptools
+setup      : |
+    %python_setup
+    %python3_setup    
+install    : |
+    %python_install
+    %python3_install
+    
