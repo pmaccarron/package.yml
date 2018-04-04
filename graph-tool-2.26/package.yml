@@ -1,0 +1,31 @@
+name       : python3-graph-tool
+version    : 2.26
+release    : 1
+source     :
+    - https://downloads.skewed.de/graph-tool/graph-tool-2.26.tar.bz2 : df6273dc5ef327a0eaf1ef1c46751fce4c0b7573880944e544287b85a068f770
+license    : GPL-3.0
+component  : programming.python
+summary    : an efficient python module for analysis of graphs
+description: |
+    graph-tool is an efficient Python module for manipulation and statistical analysis of graphs
+builddeps  :
+    - pkgconfig(expat)
+    - pkgconfig(libsparsehash)
+    - pkgconfig(python3)
+    - pkgconfig(cairomm-1.0)
+    - pkgconfig(py3cairo)
+    - CGAL-devel
+    - libboost-devel
+    - matplotlib
+    - numpy
+    - scipy
+    - graphviz
+    - pygraphviz
+rundeps    :
+    - scipy
+setup      : |
+    %configure PYTHON=python3
+build      : |
+    %make -j1
+install    : |
+    %make_install
