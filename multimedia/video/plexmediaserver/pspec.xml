@@ -27,10 +27,18 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>04-04-2018</Date>
+            <Version>1.12.1.4885-1046ba85f</Version>
+            <Comment>Update to 1.12.1.4885-1046ba85f</Comment>
+            <Name>Padraig Mac</Name>
+            <Email>padraig_mac@hotmail.com</Email>
+        </Update>
+        
         <Update release="3">
             <Date>10-01-2016</Date>
-            <Version>1.1.4.2757</Version>
-            <Comment>Update to 1.1.4.2757</Comment>
+            <Version>1.12.1.4885-1046ba85f</Version>
+            <Comment>Update to 1.12.1.4885-1046ba85f</Comment>
             <Name>Justin Zobel</Name>
             <Email>justin@solus-project.com</Email>
         </Update>
