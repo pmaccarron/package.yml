@@ -1,4 +1,4 @@
-name       : graph-tool
+name       : python-graph-tool
 version    : 2.22
 release    : 1
 source     :
@@ -10,7 +10,6 @@ description: |
     graph-tool is an efficient Python module for manipulation and statistical analysis of graphs
 builddeps  :
     - pkgconfig(python-2.7)
-    - pkgconfig(python3)
     - pkgconfig(cairomm-1.0)
     - pkgconfig(libsparsehash)
     - libboost-devel
